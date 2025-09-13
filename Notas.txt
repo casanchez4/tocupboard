@@ -1,0 +1,14 @@
+En el año 2020, durante los primeros meses de la pandemia por Covid-19, Roberto y su socio Israel identificaron la necesidad de acceder a productos de primera necesidad sin salir de casa. Así nació ToCupboard, una plataforma e-commerce destinada a facilitar a sus usuarios la compra de estos productos y orientada a apoyar a los pequeños comerciantes.
+
+Roberto e Israel, con experiencia en administración y tecnología, desarrollaron una página web en Python con una API de pasarela de pagos segura.
+
+Desarrolla una página web con WordPress, que incluya llamadas a una API y una simulación de una pasarela de pagos, aplicando el modelo DevSecOps.
+
+Características de la página web:
+    Página Web en WordPress:
+    Tema y Diseño: Utiliza un tema apropiado para la empresa ToCupboard, con un diseño profesional y responsive.
+    Contenido Básico: Incluye 5 páginas Inicio, Sobre Nosotros, Productos, Contacto.y la pasarela de pagos
+    Seguridad en el Desarrollo: Asegúrate de que el sitio web cumpla con las mejores prácticas de seguridad desde el diseño, incluyendo:
+    - Actualización de WordPress y sus plugins.
+    - Uso de plugins de seguridad.
+     - Configuración de HTTPS.
