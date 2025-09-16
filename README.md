@@ -32,3 +32,27 @@ docker compose up --build
 - **MySQL 8.0**
 - **Nginx** con Content Security Policy (CSP)
 - **phpMyAdmin** para gestionar la base de datos
+
+# Fase 1: Configuración Inicial y Seguridad Básica
+  1.1 Verificación del Entorno
+    Primero, asegurémonos de que tu WordPress esté funcionando correctamente:
+      - Abre tu navegador y ve a http://tucupboard.local:8080
+      - Accede al admin en http://tucupboard.local/wp-admin
+      - Verifica que tienes WordPress 6.8.2 instalado
+      - Crea el certificado SSL autofirmado
+        # Crear directorio para certificados
+        mkdir ssl
+        # Generar certificado autofirmado
+        openssl req -x509 -newkey rsa:4096 -keyout ssl/localhost.key -out ssl/localhost.crt -days 365 -nodes -subj "/CN=localhost"
+
+  1.2 Configuración de Seguridad Inicial
+    Instalar plugins de seguridad esenciales:
+      1. Ve a Plugins > Añadir nuevo
+      2. Busca e instala estos plugins:
+        - Wordfence Security (para firewall y escaneo)
+        - SSL Insecure Content Fixer (para HTTPS)
+        - Limit Login Attempts Reloaded (contra ataques de fuerza bruta)
+
+    Activa todos los plugins instalados
+
+    
